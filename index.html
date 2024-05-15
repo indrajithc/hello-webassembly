@@ -6,14 +6,18 @@
   </head>
   <body>
     <script type="module">
-      import init, { get_fibonacci_number } from "./pkg/hello_wasm.js";
+      import init, { get_fibonacci_number, get_sum } from "./pkg/hello_wasm.js";
       init().then(() => {
         get_fibonacci_number(6);
       });
       document.getElementById("click-me").addEventListener("click", () => {
         get_fibonacci_number(Math.floor(Math.random() * 10)  + 1);
       });
+      document.getElementById("get-data").addEventListener("click", () => {
+        console.log(get_sum(6));
+      });
       </script>
       <button id="click-me">Click me</button>
+      <button id="get-data">Get data</button>
   </body>
 </html>
