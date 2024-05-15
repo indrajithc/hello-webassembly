@@ -13,7 +13,7 @@ fn fib(n: u32) -> u32 {
 }
 
 #[wasm_bindgen]
-pub fn getFibonacciNumber(n: u32) {
+pub fn get_fibonacci_number(n: u32) {
     let num = fib(n);
     alert(&format!("Hello {n}:{num}"));
 }
