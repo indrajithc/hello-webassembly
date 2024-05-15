@@ -8,10 +8,10 @@
     <script type="module">
       import init, { greet } from "./pkg/hello_wasm.js";
       init().then(() => {
-        greet(6);
+        getFibonacciNumber(6);
       });
       document.getElementById("click-me").addEventListener("click", () => {
-        greet(Math.floor(Math.random() * 10)  + 1);
+        getFibonacciNumber(Math.floor(Math.random() * 10)  + 1);
       });
       </script>
       <button id="click-me">Click me</button>
