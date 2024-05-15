@@ -7,6 +7,7 @@
   <body>
     <script type="module">
       import init, { get_fibonacci_number } from "./pkg/hello_wasm.js";
+      
       init().then(() => {
         get_fibonacci_number(6);
       });
