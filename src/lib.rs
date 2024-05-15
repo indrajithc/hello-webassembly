@@ -17,3 +17,13 @@ pub fn get_fibonacci_number(n: u32) {
     let num = fib(n);
     alert(&format!("Hello {n}:{num}"));
 }
+
+fn sum(n: u32) -> u32 {
+    (1..=n).sum()
+}
+
+#[wasm_bindgen]
+pub fn get_sum(n: u32) {
+    let num = sum(n);
+    alert(&format!("Hello {n}:{num}"));
+}
