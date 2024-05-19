@@ -11,11 +11,9 @@
       init().then(() => {
         get_fibonacci_number(6);
       });
-
       document.getElementById("click-me").addEventListener("click", () => {
         get_fibonacci_number(Math.floor(Math.random() * 10)  + 1);
       });
-      
       document.getElementById("get-data").addEventListener("click", () => {
         console.log(get_sum(6));
       });
